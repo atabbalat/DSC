@@ -1,0 +1,2569 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1108.0821                               -->
+<workbook original-version='18.1' source-build='2022.3.1 (20223.22.1108.0821)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.SingleValuePerNestSorting.true...SingleValuePerNestSorting />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='us_score' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='501.'>
+        <calculation class='tableau' formula='501.' />
+      </column>
+      <column caption='0 Percentile' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='0.0'>
+        <calculation class='tableau' formula='0.0' />
+      </column>
+      <column caption='400' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='400.'>
+        <calculation class='tableau' formula='400.' />
+      </column>
+      <column caption='650' datatype='real' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='650.'>
+        <calculation class='tableau' formula='650.' />
+      </column>
+      <column caption='800' datatype='real' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='800.'>
+        <calculation class='tableau' formula='800.' />
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (Chocolate Characteristics)' inline='true' name='federated.0fbjqbm1gu2zs71g3tx2y0afvy5b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Chocolate Characteristics' name='excel-direct.0aw0qry0jyrowc1bqy7ws0q8c8rw'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/abedt/OneDrive/Desktop/Desktop_V2/PyCharm Projects/DSC_640/Week 11 &amp; 12/Chocolate Characteristics.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0aw0qry0jyrowc1bqy7ws0q8c8rw' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:A8899:no:A1:A8899:0' header='yes' outcome='2'>
+            <column datatype='string' name='Characteristics' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0aw0qry0jyrowc1bqy7ws0q8c8rw' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:A8899:no:A1:A8899:0' header='yes' outcome='2'>
+            <column datatype='string' name='Characteristics' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:A8899:no:A1:A8899:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Characteristics</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Characteristics]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Characteristics</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_A628A2C9FFCA4F9EA611F8ADBB509921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_A628A2C9FFCA4F9EA611F8ADBB509921]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_A628A2C9FFCA4F9EA611F8ADBB509921'>
+            <properties context=''>
+              <relation connection='excel-direct.0aw0qry0jyrowc1bqy7ws0q8c8rw' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:A8899:no:A1:A8899:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Characteristics' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='education' inline='true' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='education' name='textscan.0sf76m51mu7cok18x3dhy16o617k'>
+            <connection class='textscan' directory='C:/Users/abedt/OneDrive/Desktop/Desktop_V2/PyCharm Projects/DSC_640/Week 11 &amp; 12' filename='education.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0sf76m51mu7cok18x3dhy16o617k' name='education.csv' table='[education#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='integer' name='reading' ordinal='1' />
+            <column datatype='integer' name='math' ordinal='2' />
+            <column datatype='integer' name='writing' ordinal='3' />
+            <column datatype='integer' name='percent_graduates_sat' ordinal='4' />
+            <column datatype='real' name='pupil_staff_ratio' ordinal='5' />
+            <column datatype='real' name='dropout_rate' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0sf76m51mu7cok18x3dhy16o617k' name='education.csv' table='[education#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='integer' name='reading' ordinal='1' />
+            <column datatype='integer' name='math' ordinal='2' />
+            <column datatype='integer' name='writing' ordinal='3' />
+            <column datatype='integer' name='percent_graduates_sat' ordinal='4' />
+            <column datatype='real' name='pupil_staff_ratio' ordinal='5' />
+            <column datatype='real' name='dropout_rate' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education.csv_A69F1528C23A4D109ADB16786B84EFCE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reading</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reading]</local-name>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias>reading</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education.csv_A69F1528C23A4D109ADB16786B84EFCE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>math</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[math]</local-name>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias>math</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education.csv_A69F1528C23A4D109ADB16786B84EFCE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>writing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[writing]</local-name>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias>writing</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education.csv_A69F1528C23A4D109ADB16786B84EFCE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_graduates_sat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[percent_graduates_sat]</local-name>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias>percent_graduates_sat</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education.csv_A69F1528C23A4D109ADB16786B84EFCE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pupil_staff_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pupil_staff_ratio]</local-name>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias>pupil_staff_ratio</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education.csv_A69F1528C23A4D109ADB16786B84EFCE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropout_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dropout_rate]</local-name>
+            <parent-name>[education.csv]</parent-name>
+            <remote-alias>dropout_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[education.csv_A69F1528C23A4D109ADB16786B84EFCE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='education.csv' datatype='table' name='[__tableau_internal_object_id__].[education.csv_A69F1528C23A4D109ADB16786B84EFCE]' role='measure' type='quantitative' />
+      <column caption='Dropout Rate' datatype='real' name='[dropout_rate]' role='measure' type='quantitative' />
+      <column caption='Math' datatype='integer' name='[math]' role='measure' type='quantitative' />
+      <column caption='Percent Graduates Sat' datatype='integer' name='[percent_graduates_sat]' role='measure' type='quantitative' />
+      <column caption='Pupil Staff Ratio' datatype='real' name='[pupil_staff_ratio]' role='measure' type='quantitative' />
+      <column caption='Reading' datatype='integer' name='[reading]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Writing' datatype='integer' name='[writing]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='education.csv' id='education.csv_A69F1528C23A4D109ADB16786B84EFCE'>
+            <properties context=''>
+              <relation connection='textscan.0sf76m51mu7cok18x3dhy16o617k' name='education.csv' table='[education#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='integer' name='reading' ordinal='1' />
+                  <column datatype='integer' name='math' ordinal='2' />
+                  <column datatype='integer' name='writing' ordinal='3' />
+                  <column datatype='integer' name='percent_graduates_sat' ordinal='4' />
+                  <column datatype='real' name='pupil_staff_ratio' ordinal='5' />
+                  <column datatype='real' name='dropout_rate' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='crimeratesbystate-formatted' inline='true' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='crimeratesbystate-formatted' name='textscan.0v5hoz404c4fja1d0rllo16txxbc'>
+            <connection class='textscan' directory='C:/Users/abedt/OneDrive/Desktop/Desktop_V2/PyCharm Projects/DSC_640/Week 11 &amp; 12' filename='crimeratesbystate-formatted.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0v5hoz404c4fja1d0rllo16txxbc' name='crimeratesbystate-formatted.csv' table='[crimeratesbystate-formatted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='real' name='murder' ordinal='1' />
+            <column datatype='real' name='forcible_rape' ordinal='2' />
+            <column datatype='real' name='robbery' ordinal='3' />
+            <column datatype='real' name='aggravated_assault' ordinal='4' />
+            <column datatype='real' name='burglary' ordinal='5' />
+            <column datatype='real' name='larceny_theft' ordinal='6' />
+            <column datatype='real' name='motor_vehicle_theft' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0v5hoz404c4fja1d0rllo16txxbc' name='crimeratesbystate-formatted.csv' table='[crimeratesbystate-formatted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='real' name='murder' ordinal='1' />
+            <column datatype='real' name='forcible_rape' ordinal='2' />
+            <column datatype='real' name='robbery' ordinal='3' />
+            <column datatype='real' name='aggravated_assault' ordinal='4' />
+            <column datatype='real' name='burglary' ordinal='5' />
+            <column datatype='real' name='larceny_theft' ordinal='6' />
+            <column datatype='real' name='motor_vehicle_theft' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>murder</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[murder]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>murder</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>forcible_rape</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[forcible_rape]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>forcible_rape</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>robbery</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[robbery]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>robbery</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aggravated_assault</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[aggravated_assault]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>aggravated_assault</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>burglary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[burglary]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>burglary</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>larceny_theft</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[larceny_theft]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>larceny_theft</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>motor_vehicle_theft</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[motor_vehicle_theft]</local-name>
+            <parent-name>[crimeratesbystate-formatted.csv]</parent-name>
+            <remote-alias>motor_vehicle_theft</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Aggravated Assault (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[aggravated_assault]' peg='0' size='52.4' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Burglary (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[burglary]' peg='0' size='69.6' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Forcible Rape (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[forcible_rape]' peg='0' size='5.3' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Larceny Theft (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[larceny_theft]' peg='0' size='154' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Motor Vehicle Theft (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[motor_vehicle_theft]' peg='0' size='102' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Murder (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[murder]' peg='0' size='3.11' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Robbery (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[robbery]' peg='0' size='52.8' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='crimeratesbystate-formatted.csv' datatype='table' name='[__tableau_internal_object_id__].[crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E]' role='measure' type='quantitative' />
+      <column caption='Aggravated Assault' datatype='real' name='[aggravated_assault]' role='measure' type='quantitative' />
+      <column caption='Burglary' datatype='real' name='[burglary]' role='measure' type='quantitative' />
+      <column caption='Forcible Rape' datatype='real' name='[forcible_rape]' role='measure' type='quantitative' />
+      <column caption='Larceny Theft' datatype='real' name='[larceny_theft]' role='measure' type='quantitative' />
+      <column caption='Motor Vehicle Theft' datatype='real' name='[motor_vehicle_theft]' role='measure' type='quantitative' />
+      <column caption='Murder' datatype='real' name='[murder]' role='measure' type='quantitative' />
+      <column caption='Robbery' datatype='real' name='[robbery]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='crimeratesbystate-formatted.csv' id='crimeratesbystate-formatted.csv_A3258ABD0DF54AF5BD1834B9D0CC780E'>
+            <properties context=''>
+              <relation connection='textscan.0v5hoz404c4fja1d0rllo16txxbc' name='crimeratesbystate-formatted.csv' table='[crimeratesbystate-formatted#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='real' name='murder' ordinal='1' />
+                  <column datatype='real' name='forcible_rape' ordinal='2' />
+                  <column datatype='real' name='robbery' ordinal='3' />
+                  <column datatype='real' name='aggravated_assault' ordinal='4' />
+                  <column datatype='real' name='burglary' ordinal='5' />
+                  <column datatype='real' name='larceny_theft' ordinal='6' />
+                  <column datatype='real' name='motor_vehicle_theft' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='live' inline='true' name='federated.1ftg08302a3ufg12pjmjc1nvcob1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='live' name='textscan.0v5j8x10zjqkmj1a37o0i0idna65'>
+            <connection class='textscan' directory='C:/Users/abedt/OneDrive/Desktop/Desktop_V2/PyCharm Projects/DSC_640/Week 11 &amp; 12' filename='live.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0v5j8x10zjqkmj1a37o0i0idna65' name='live.csv' table='[live#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='amt.pledged' ordinal='1' />
+            <column datatype='string' name='blurb' ordinal='2' />
+            <column datatype='string' name='by' ordinal='3' />
+            <column datatype='string' name='country' ordinal='4' />
+            <column datatype='string' name='currency' ordinal='5' />
+            <column datatype='string' name='end.time' ordinal='6' />
+            <column datatype='integer' name='location' ordinal='7' />
+            <column datatype='string' name='percentage.funded' ordinal='8' />
+            <column datatype='string' name='state' ordinal='9' />
+            <column datatype='string' name='title' ordinal='10' />
+            <column datatype='string' name='type' ordinal='11' />
+            <column datatype='string' name='url' ordinal='12' />
+            <column datatype='string' name='F14' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0v5j8x10zjqkmj1a37o0i0idna65' name='live.csv' table='[live#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='amt.pledged' ordinal='1' />
+            <column datatype='string' name='blurb' ordinal='2' />
+            <column datatype='string' name='by' ordinal='3' />
+            <column datatype='string' name='country' ordinal='4' />
+            <column datatype='string' name='currency' ordinal='5' />
+            <column datatype='string' name='end.time' ordinal='6' />
+            <column datatype='integer' name='location' ordinal='7' />
+            <column datatype='string' name='percentage.funded' ordinal='8' />
+            <column datatype='string' name='state' ordinal='9' />
+            <column datatype='string' name='title' ordinal='10' />
+            <column datatype='string' name='type' ordinal='11' />
+            <column datatype='string' name='url' ordinal='12' />
+            <column datatype='string' name='F14' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amt.pledged</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[amt.pledged]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>amt.pledged</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blurb</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[blurb]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>blurb</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>by</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[by]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>by</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[currency]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>currency</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end.time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end.time]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>end.time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage.funded</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[percentage.funded]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>percentage.funded</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[live.csv]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='live.csv' datatype='table' name='[__tableau_internal_object_id__].[live.csv_3AED2B85991D49CCB7BE254FA955EBB4]' role='measure' type='quantitative' />
+      <column caption='Amt.Pledged' datatype='string' name='[amt.pledged]' role='dimension' type='nominal' />
+      <column caption='Blurb' datatype='string' name='[blurb]' role='dimension' type='nominal' />
+      <column caption='By' datatype='string' name='[by]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Currency' datatype='string' name='[currency]' role='dimension' type='nominal' />
+      <column caption='End.Time' datatype='string' name='[end.time]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='integer' name='[location]' role='measure' type='quantitative' />
+      <column caption='Percentage.Funded' datatype='string' name='[percentage.funded]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='country, state'>
+          <field>[country]</field>
+          <field>[state]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='live.csv' id='live.csv_3AED2B85991D49CCB7BE254FA955EBB4'>
+            <properties context=''>
+              <relation connection='textscan.0v5j8x10zjqkmj1a37o0i0idna65' name='live.csv' table='[live#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='string' name='amt.pledged' ordinal='1' />
+                  <column datatype='string' name='blurb' ordinal='2' />
+                  <column datatype='string' name='by' ordinal='3' />
+                  <column datatype='string' name='country' ordinal='4' />
+                  <column datatype='string' name='currency' ordinal='5' />
+                  <column datatype='string' name='end.time' ordinal='6' />
+                  <column datatype='integer' name='location' ordinal='7' />
+                  <column datatype='string' name='percentage.funded' ordinal='8' />
+                  <column datatype='string' name='state' ordinal='9' />
+                  <column datatype='string' name='title' ordinal='10' />
+                  <column datatype='string' name='type' ordinal='11' />
+                  <column datatype='string' name='url' ordinal='12' />
+                  <column datatype='string' name='F14' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Box Plot Reading'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Reading</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='education' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rs8t7s1vlbhez1fa14vy09t2kyt'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Reading' datatype='integer' name='[reading]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[reading]' derivation='Sum' name='[sum:reading:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:reading:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:reading:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:reading:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4B4BAE79-BA86-4BCB-B54D-878686FAA07C}' />
+    </worksheet>
+    <worksheet name='Boxplot Dropout Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Dropout Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='education' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rs8t7s1vlbhez1fa14vy09t2kyt'>
+            <column caption='Dropout Rate' datatype='real' name='[dropout_rate]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[dropout_rate]' derivation='Sum' name='[sum:dropout_rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:dropout_rate:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:dropout_rate:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:dropout_rate:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FF0ABEF1-520A-4EF2-B411-CE3BA33AF3A7}' />
+    </worksheet>
+    <worksheet name='Boxplot Math'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Math</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='education' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rs8t7s1vlbhez1fa14vy09t2kyt'>
+            <column caption='Math' datatype='integer' name='[math]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[math]' derivation='Sum' name='[sum:math:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:math:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:math:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:math:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D4E2CCA5-B1CF-461B-97D7-09FD661560F2}' />
+    </worksheet>
+    <worksheet name='Boxplot Percent Grad Sat'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Percent Graduate SAT</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='education' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rs8t7s1vlbhez1fa14vy09t2kyt'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Percent Graduates Sat' datatype='integer' name='[percent_graduates_sat]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[percent_graduates_sat]' derivation='Sum' name='[sum:percent_graduates_sat:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:percent_graduates_sat:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:percent_graduates_sat:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:percent_graduates_sat:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1B4554B6-A5D6-40E4-A7FB-B8EEB950640B}' />
+    </worksheet>
+    <worksheet name='Boxplot Pupil'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Pupil Staff Ratio</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='education' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rs8t7s1vlbhez1fa14vy09t2kyt'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Pupil Staff Ratio' datatype='real' name='[pupil_staff_ratio]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[pupil_staff_ratio]' derivation='Sum' name='[sum:pupil_staff_ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:pupil_staff_ratio:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:pupil_staff_ratio:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:pupil_staff_ratio:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{24E21176-3FE2-4927-BC78-9BA93F1A760F}' />
+    </worksheet>
+    <worksheet name='Boxplot Writing'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Writing</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='education' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rs8t7s1vlbhez1fa14vy09t2kyt'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[writing]' derivation='Sum' name='[sum:writing:qk]' pivot='key' type='quantitative' />
+            <column caption='Writing' datatype='integer' name='[writing]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:writing:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:writing:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[sum:writing:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D4C61AA1-5076-4B3C-BF82-23696FB4FC21}' />
+    </worksheet>
+    <worksheet name='Bullet Charts'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Tableau - Bullet Chart</run>
+            <run>Æ&#10;</run>
+            <run bold='true'>Education</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='education' name='federated.0rs8t7s1vlbhez1fa14vy09t2kyt' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='us_score' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='501.'>
+              <calculation class='tableau' formula='501.' />
+            </column>
+            <column caption='0 Percentile' datatype='real' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='0.0'>
+              <calculation class='tableau' formula='0.0' />
+            </column>
+            <column caption='400' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='400.'>
+              <calculation class='tableau' formula='400.' />
+            </column>
+            <column caption='650' datatype='real' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='650.'>
+              <calculation class='tableau' formula='650.' />
+            </column>
+            <column caption='800' datatype='real' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='800.'>
+              <calculation class='tableau' formula='800.' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0rs8t7s1vlbhez1fa14vy09t2kyt'>
+            <column-instance column='[reading]' derivation='Avg' name='[avg:reading:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Reading' datatype='integer' name='[reading]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:state:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:state:nk]' member='&quot;United States&quot;' />
+                <groupfilter function='member' level='[none:state:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]' shelf='rows' />
+          </_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' value='32' />
+            <encoding attr='space' class='0' field='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' field-type='quantitative' max='800.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#e15759' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='stroke-color' id='refline1' value='#e15759' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline3' value='#5050fb' />
+            <format attr='fill-color' id='refline5' value='#0000ff' />
+            <format attr='fill-color' id='refline2' value='#a0a0f7' />
+            <format attr='fill-color' id='refline4' value='#5050fb' />
+            <format attr='fill-color' id='refline6' value='#0000ff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' value-column='[Parameters].[Parameter 1]' z-order='1' />
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' enable-instant-analytics='true' formula='min' id='refline2' label-type='none' paired-id='refline3' scope='per-table' symmetric='false' value-column='[Parameters].[Parameter 3]' z-order='2' />
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' enable-instant-analytics='true' formula='max' id='refline3' label-type='none' paired-id='refline2' scope='per-table' symmetric='false' value-column='[Parameters].[Parameter 4]' z-order='3' />
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' enable-instant-analytics='true' formula='min' id='refline4' label-type='none' paired-id='refline5' scope='per-table' symmetric='false' value-column='[Parameters].[Parameter 4]' z-order='4' />
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' enable-instant-analytics='true' formula='max' id='refline5' label-type='none' paired-id='refline4' scope='per-table' symmetric='false' value-column='[Parameters].[Parameter 5]' z-order='5' />
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' enable-instant-analytics='true' formula='min' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value-column='[Parameters].[Parameter 5]' z-order='6' />
+            <reference-line axis-column='[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]' enable-instant-analytics='true' formula='max' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value-column='[Parameters].[Parameter 6]' z-order='7' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</rows>
+        <cols>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[avg:reading:qk]</cols>
+      </table>
+      <simple-id uuid='{7A56B911-FFC2-4118-8317-4D1BA1EBFB01}' />
+    </worksheet>
+    <worksheet name='Histogram Agg Assault'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Aggravated Assault</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimeratesbystate-formatted' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y4rsz91hzd2bf1cgm87k1ttm97g'>
+            <column aggregation='None' datatype='integer' name='[Aggravated Assault (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[aggravated_assault]' peg='0' size='52.4' />
+            </column>
+            <column caption='Aggravated Assault' datatype='real' name='[aggravated_assault]' role='measure' type='quantitative' />
+            <column-instance column='[aggravated_assault]' derivation='Count' name='[cnt:aggravated_assault:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aggravated Assault (bin)]' derivation='None' name='[none:Aggravated Assault (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[cnt:aggravated_assault:qk]</rows>
+        <cols>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[none:Aggravated Assault (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[Aggravated Assault (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D59C5228-DEE5-4D65-8A1D-ACC7D39DBA41}' />
+    </worksheet>
+    <worksheet name='Histogram Burglary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Burglary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimeratesbystate-formatted' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y4rsz91hzd2bf1cgm87k1ttm97g'>
+            <column aggregation='None' datatype='integer' name='[Burglary (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[burglary]' peg='0' size='69.6' />
+            </column>
+            <column caption='Burglary' datatype='real' name='[burglary]' role='measure' type='quantitative' />
+            <column-instance column='[burglary]' derivation='Count' name='[cnt:burglary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Burglary (bin)]' derivation='None' name='[none:Burglary (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[cnt:burglary:qk]</rows>
+        <cols>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[none:Burglary (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[Burglary (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E1499E10-E4FA-4318-B1BD-0A5D78968372}' />
+    </worksheet>
+    <worksheet name='Histogram Larceny'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Larceny Theft</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimeratesbystate-formatted' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y4rsz91hzd2bf1cgm87k1ttm97g'>
+            <column aggregation='None' datatype='integer' name='[Larceny Theft (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='2' formula='[larceny_theft]' peg='0' size='154' />
+            </column>
+            <column-instance column='[larceny_theft]' derivation='Count' name='[cnt:larceny_theft:qk]' pivot='key' type='quantitative' />
+            <column caption='Larceny Theft' datatype='real' name='[larceny_theft]' role='measure' type='quantitative' />
+            <column-instance column='[Larceny Theft (bin)]' derivation='None' name='[none:Larceny Theft (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[cnt:larceny_theft:qk]</rows>
+        <cols>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[none:Larceny Theft (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[Larceny Theft (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6D6A6DB6-B358-4DE1-9318-6EC04B8BF6B3}' />
+    </worksheet>
+    <worksheet name='Histogram Motor Vehicle'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Motor Vehicle Theft</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimeratesbystate-formatted' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y4rsz91hzd2bf1cgm87k1ttm97g'>
+            <column aggregation='None' datatype='integer' name='[Motor Vehicle Theft (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='2' formula='[motor_vehicle_theft]' peg='0' size='102' />
+            </column>
+            <column-instance column='[motor_vehicle_theft]' derivation='Count' name='[cnt:motor_vehicle_theft:qk]' pivot='key' type='quantitative' />
+            <column caption='Motor Vehicle Theft' datatype='real' name='[motor_vehicle_theft]' role='measure' type='quantitative' />
+            <column-instance column='[Motor Vehicle Theft (bin)]' derivation='None' name='[none:Motor Vehicle Theft (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[cnt:motor_vehicle_theft:qk]</rows>
+        <cols>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[none:Motor Vehicle Theft (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[Motor Vehicle Theft (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{71B2FAC8-DBEB-4B5A-9614-C4E262AA3115}' />
+    </worksheet>
+    <worksheet name='Histogram Murder'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Murder</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimeratesbystate-formatted' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y4rsz91hzd2bf1cgm87k1ttm97g'>
+            <column aggregation='None' datatype='integer' name='[Murder (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[murder]' peg='0' size='3.11' />
+            </column>
+            <column-instance column='[murder]' derivation='Count' name='[cnt:murder:qk]' pivot='key' type='quantitative' />
+            <column caption='Murder' datatype='real' name='[murder]' role='measure' type='quantitative' />
+            <column-instance column='[Murder (bin)]' derivation='None' name='[none:Murder (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[cnt:murder:qk]</rows>
+        <cols>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[none:Murder (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[Murder (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{22DE5DC8-53A1-4AFA-A39C-7F96992A3483}' />
+    </worksheet>
+    <worksheet name='Histogram Rape'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Forcible Rape</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimeratesbystate-formatted' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y4rsz91hzd2bf1cgm87k1ttm97g'>
+            <column aggregation='None' datatype='integer' name='[Forcible Rape (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[forcible_rape]' peg='0' size='5.3' />
+            </column>
+            <column-instance column='[forcible_rape]' derivation='Count' name='[cnt:forcible_rape:qk]' pivot='key' type='quantitative' />
+            <column caption='Forcible Rape' datatype='real' name='[forcible_rape]' role='measure' type='quantitative' />
+            <column-instance column='[Forcible Rape (bin)]' derivation='None' name='[none:Forcible Rape (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[cnt:forcible_rape:qk]</rows>
+        <cols>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[none:Forcible Rape (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[Forcible Rape (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{686D94B6-162A-4412-BFF1-DFD2EBEF3FB0}' />
+    </worksheet>
+    <worksheet name='Histogram Robbery'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Robbery</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimeratesbystate-formatted' name='federated.1y4rsz91hzd2bf1cgm87k1ttm97g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y4rsz91hzd2bf1cgm87k1ttm97g'>
+            <column aggregation='None' datatype='integer' name='[Robbery (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[robbery]' peg='0' size='52.8' />
+            </column>
+            <column-instance column='[robbery]' derivation='Count' name='[cnt:robbery:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Robbery (bin)]' derivation='None' name='[none:Robbery (bin):qk]' pivot='key' type='quantitative' />
+            <column caption='Robbery' datatype='real' name='[robbery]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[cnt:robbery:qk]</rows>
+        <cols>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[none:Robbery (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1y4rsz91hzd2bf1cgm87k1ttm97g].[Robbery (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6673E0A5-3607-48F8-8173-6C35EF9C70EC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Boxplots'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='86797' id='12' param='vert' type-v2='layout-flow' w='99318' x='341' y='12570'>
+            <zone h='86797' id='10' type-v2='layout-basic' w='99318' x='341' y='12570'>
+              <zone h='43399' id='3' name='Box Plot Reading' w='32874' x='341' y='12570'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43399' id='5' name='Boxplot Math' w='35021' x='33215' y='12570'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43398' id='6' name='Boxplot Dropout Rate' w='32874' x='341' y='55969'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43398' id='7' name='Boxplot Percent Grad Sat' w='35021' x='33215' y='55969'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43399' id='8' name='Boxplot Writing' w='31423' x='68236' y='12570'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43398' id='9' name='Boxplot Pupil' w='31423' x='68236' y='55969'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='11937' id='13' type-v2='text' w='99318' x='341' y='633'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='20'>Tableau - Box Plot</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontsize='20'>Education</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98734' id='16' param='vert' type-v2='layout-flow' w='99318' x='341' y='633'>
+                <zone forceUpdate='true' h='11937' id='13' type-v2='text' w='99318' x='341' y='633'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='20'>Tableau - Box Plot</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontsize='20'>Education</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43399' id='3' is-fixed='true' name='Box Plot Reading' w='32874' x='341' y='12570'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43399' id='5' is-fixed='true' name='Boxplot Math' w='35021' x='33215' y='12570'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43399' id='8' is-fixed='true' name='Boxplot Writing' w='31423' x='68236' y='12570'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43398' id='6' is-fixed='true' name='Boxplot Dropout Rate' w='32874' x='341' y='55969'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43398' id='7' is-fixed='true' name='Boxplot Percent Grad Sat' w='35021' x='33215' y='55969'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43398' id='9' is-fixed='true' name='Boxplot Pupil' w='31423' x='68236' y='55969'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3A7F4962-B56D-4876-9960-DD43B3611EEA}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Histograms'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='36593' id='3' name='Histogram Agg Assault' w='24831' x='25169' y='13407'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='36593' id='5' name='Histogram Burglary' w='24830' x='74829' y='13407'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49367' id='6' name='Histogram Rape' w='24831' x='25169' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49367' id='7' name='Histogram Larceny' w='24830' x='50000' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49367' id='8' name='Histogram Motor Vehicle' w='24828' x='341' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='36593' id='9' name='Histogram Murder' w='24828' x='341' y='13407'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='36593' id='10' name='Histogram Robbery' w='24829' x='50000' y='13407'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49367' id='11' type-v2='empty' w='24829' x='74830' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='12774' id='12' type-v2='text' w='99318' x='341' y='633'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='24'>Tableau - Histogram</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontsize='24'>Crime</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98734' id='15' param='vert' type-v2='layout-flow' w='99318' x='341' y='633'>
+                <zone forceUpdate='true' h='12774' id='12' type-v2='text' w='99318' x='341' y='633'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='24'>Tableau - Histogram</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontsize='24'>Crime</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36593' id='9' is-fixed='true' name='Histogram Murder' w='24828' x='341' y='13407'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36593' id='3' is-fixed='true' name='Histogram Agg Assault' w='24831' x='25169' y='13407'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36593' id='10' is-fixed='true' name='Histogram Robbery' w='24829' x='50000' y='13407'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36593' id='5' is-fixed='true' name='Histogram Burglary' w='24830' x='74829' y='13407'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49367' id='8' is-fixed='true' name='Histogram Motor Vehicle' w='24828' x='341' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49367' id='6' is-fixed='true' name='Histogram Rape' w='24831' x='25169' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49367' id='7' is-fixed='true' name='Histogram Larceny' w='24830' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E35A5B07-2145-49C8-A68E-1D508FBFB708}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='dashboard' name='Histograms'>
+      <viewpoints>
+        <viewpoint name='Histogram Agg Assault'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram Burglary'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram Larceny'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram Motor Vehicle'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram Murder'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram Rape'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram Robbery'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{FEBE12DE-A1EC-4FDD-9B7D-E4ECD9807028}' />
+    </window>
+    <window class='dashboard' name='Boxplots'>
+      <viewpoints>
+        <viewpoint name='Box Plot Reading'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Boxplot Dropout Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Boxplot Math'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Boxplot Percent Grad Sat'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Boxplot Pupil'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Boxplot Writing'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{F67849D8-688D-4F1C-9B62-45C62AACE9B5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Bullet Charts'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 3]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 4]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 5]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 6]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{85AB77A6-F74A-489F-81F5-CA7BBF0F0CD3}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Box Plot Reading'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{624B6497-CB17-447D-B2DA-A2796D4BAA60}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Boxplot Dropout Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D5717E6D-F8CF-459A-B8CD-81E4E9DE6B2C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Boxplot Math'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F63D4D26-2C5C-4CA7-B4D2-2016E496CFBE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Boxplot Percent Grad Sat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5E2F7958-61B8-41C1-99C3-4CE48BDDD02B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Boxplot Pupil'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{537C693A-6FD5-4B76-9C63-51587859B63E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Boxplot Writing'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rs8t7s1vlbhez1fa14vy09t2kyt].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB8D9FF5-E20D-4658-ADD8-4964CB22E380}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histogram Agg Assault'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D16E024-1B55-4CF9-BC79-C78F2CD8FD9C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histogram Burglary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A999E050-416E-4D9D-B5A1-B8AC4A01278F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histogram Larceny'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4FB53B45-3566-4FA7-8A14-3C88AACD1151}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histogram Motor Vehicle'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF98746A-4680-4EC1-BE18-E6B773F16770}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histogram Murder'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F20CB3C8-4825-4AF4-B98A-05B65A919CD1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histogram Rape'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CC6CD71-909F-4A45-A430-B57E08A7D13C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Histogram Robbery'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D132C2C2-D4A5-4C67-8C22-9C3A713211C9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Boxplots' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Bullet Charts' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Histograms' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAUuElEQVR4nO3d6VNc15nH8W8v9ELT0KzdgAAJhAQYyZtkW4kzWV3jVCZJZZLMOJklk2SS
+      qnkxU/MnuOZFKpNUqlKTV+PKOJM48TKOHTux7DjWYskSstCGAEkggUAs3dA09E7v98wLW45l
+      NjUIGnSfzyvovn376eXX955z77nHoJRSCKFTxkIXIEQhSQCErkkAhK5JAISuSQCErkkAhK5J
+      AISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCE
+      rkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5J
+      AISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK7dEoAZ7xhT
+      gRBKKQYvXSSZXfqBwcnrjPhC612f2IJy2SRXBofX/Xmu9JwnkXvv7+icnzGvP78VaNlbA3Ds
+      rUMcfOsttMQMP/3xD/GFEnhnggRnvCSSCab8M0x4p5nze+nuOs6IL4R/8gajE1NkEhH8MzN4
+      p2fv1OsTW9TwhS5++8przCVyZFPz9PX2EZgLkUnG6O3rZzYYZmp6mqmJcSLhID09F5lPpfFO
+      TaPl0kxPBxgdGmRodJKp0X5++KP/YioQwu8dY2R8CpRidGiQt48cJfl+AI4ePsQf3zoEwNTE
+      KFeuXieXTdF3sYfZcIzA1AS9lwbI5bL4pv3Ew7OEY3HMt1RutGI3apzvPsf+Rz8GsSleOzdC
+      sxqiZd/n+Nn/vMC/fPtr/ObFP9BWX4wx6uOZE30Ua2E+/dm/4DcHz/D9f/rGRr/fYpPpvjjI
+      vt3VnL4wwEz/ERp3dXLqQh/m+AwtHe2c7R0mGxqicdc+mtx2Tr1zgtOXRijOhPnY/c2MpasJ
+      Dp/m3TMX+ea3vwVAKjrNK68dw2FM0Lank8s3QqRSKQC0bIobXj9Wo2JyNszPfvJjtnc+Snjc
+      yktH+/nq158gF7jGyZMn8X32a0yOXuPAjlLmnK0L2wD72z38/vwUTS4rmEz4rg/Sd2UIgAcO
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
