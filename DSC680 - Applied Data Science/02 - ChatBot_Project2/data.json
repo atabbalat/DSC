@@ -1,0 +1,452 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "How are you?", "Is anyone there?", "Hello", "Good day", "Good morning", "Good afternoon", "Good evening", "Greetings", "Howdy", "Help now.", "Help needed.", "Please support.", "Support now", "Moew", "Cool"],
+            "responses": ["Hello, how can I assist you with your insurance needs today?", "Hi there! What can I do for you today regarding insurance?", "Hello, insurance is my specialty! How can I help you today?", "Hi there! I'm here to provide you with top-notch insurance assistance. How can I assist you?", "Greetings! If you have any insurance-related queries or needs, feel free to ask. I'm here to help!", "Hello! I'm your friendly insurance assistant. How may I be of service to you?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "I am leaving", "Farewell", "Take care", "Have a great day", "Until next time", "Catch you later", "See you soon", "All the best", "Have a nice day", "Goodbye for now", "It was nice talking to you"],
+            "responses": ["Goodbye, have a great day!", "See you later! If you have any more insurance questions, feel free to ask."]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thank you", "Thanks", "I appreciate your help", "Thank you for your help.", "I appreciate your support.", "Many thanks for your guidance.", "I'm grateful for your advice.", "Thanks a lot for your time.", "Thnx"],
+            "responses": ["You're welcome! If you have any other questions, feel free to ask.", "I'm always here to help! Don't hesitate to reach out if you need anything else."]
+        },
+        {
+            "tag": "insurance_premium",
+            "patterns": ["What is an insurance premium?", "What does the term \"insurance premium\" mean?", "How would you define an insurance premium?", "Can you explain what an insurance premium is?", "What is the purpose of an insurance premium?", "Could you clarify the concept of insurance premium?", "What exactly is meant by the term \"insurance premium\"?", "Can you provide a brief explanation of insurance premiums?", "How would you describe the meaning of insurance premium?", "What is the definition of an insurance premium?", "Could you explain the term \"insurance premium\" to me?"],
+            "responses": ["An insurance premium is the amount you pay periodically to your insurer to cover your risk."]
+        },
+        {
+            "tag": "insurance_deductible",
+            "patterns": ["Could you explain what a deductible is?", "What is the definition of an insurance deductible?", "Can you clarify what a deductible means in insurance terms?", "How would you explain the concept of a deductible?", "What exactly is meant by the term \"insurance deductible\"?", "Could you provide a brief overview of insurance deductibles?", "Can you explain the purpose of having a deductible in insurance?", "What is the role of a deductible in an insurance policy?", "How does an insurance deductible work?", "Can you give me a basic understanding of how deductibles function in insurance?", "What do I need to know about insurance deductibles?", "Insurance deductibles", "Insurance deductibles?", "Explain insurance deductibles.", "I don’t get insurance deductibles."],
+            "responses": ["A deductible is an amount you pay out of pocket before your insurance coverage kicks in."]
+        },
+        {
+            "tag": "policy_limits",
+            "patterns": ["I'm not sure about policy limits, can you explain?", "I don’t get policy limits.", "What are policy limits in insurance?", "Can you provide an explanation of policy limits?", "How would you define policy limits in insurance terms?", "What exactly do you mean by the term \"policy limits\"?", "Could you explain the concept of policy limits in insurance coverage?", "What is the purpose of having policy limits in an insurance policy?", "Can you clarify the role of policy limits in determining coverage?", "How do policy limits work when it comes to insurance claims?", "Can you give me a basic understanding of how policy limits affect coverage?", "What do I need to know about insurance policy limits?", "I don’t understand policy limits.", "Policy limits?"],
+            "responses": ["A policy limit is the maximum amount an insurer will pay for a covered loss."]
+        },
+        {
+            "tag": "insurance_claim",
+            "patterns": ["Can you tell me what an insurance claim is?", "What exactly is involved in making an insurance claim?", "Can you explain the concept of an insurance claim?", "How would you define an insurance claim?", "What is meant by the term \"insurance claim\"?", "Could you provide a brief overview of insurance claims?", "Can you clarify the process of filing an insurance claim?", "What is the purpose of making an insurance claim?", "How do insurance claims work in practice?", "Can you give me a basic understanding of how insurance claims are handled?", "What do I need to know about initiating an insurance claim?", "Insurance claims", "Claims", "Insurance claims?", "What do you mean by insurance claims?", "I don’t get insurance claims.", "Explain insurance claims to me."],
+            "responses": ["An insurance claim is a formal request by a policyholder to an insurance company for coverage or compensation for a covered loss."]
+        },
+        {
+            "tag": "file_claim",
+            "patterns": ["I need to file a claim, what should I do?", "What steps should I take to file a claim?", "How do I go about filing a claim?", "Can you guide me on what to do to initiate a claim?", "I'm unsure how to start the claim process, can you assist?", "What is the procedure for filing a claim?", "Could you provide instructions on how to file a claim?", "What are the necessary actions to take when filing a claim?", "I need assistance with filing a claim, can you point me in the right direction?", "What should be my first course of action in order to file a claim?", "Can you provide guidance on how to submit a claim?"],
+            "responses": ["To file a claim, please contact our claims department or visit our website for the claims submission form."]
+        },
+        {
+            "tag": "document_claim",
+            "patterns": ["What documents do I need to submit for my claim?", "What paperwork or documentation do I need to provide for my claim?", "Can you tell me which documents are necessary to submit with my claim?", "What specific paperwork should I gather for my claim submission?", "I'm unsure about the documents required for my claim, can you provide some guidance?", "What information and records do I need to include when filing a claim?", "Could you clarify the documentation needed for the claims process?", "Can you provide a checklist of documents I should prepare for my claim?", "What supporting evidence or paperwork is typically required for a claim?", "I want to ensure I have all the necessary documents for my claim, can you assist me with that?", "What are the essential documents I need to gather for my claim?"],
+            "responses": ["The documents required for filing a claim depend on the type of insurance and the nature of your claim. Typically, you'll need your policy details and any proof of the incident."]
+        },
+        {
+            "tag": "process_claim",
+            "patterns": ["Can you explain the claim process?", "How does the claim process work?", "Can you provide an overview of the steps involved in processing a claim?", "What is the typical procedure for handling a claim?", "I'm unfamiliar with the claim process, could you explain it to me?", "Can you walk me through the steps of processing a claim?", "What happens after I submit my claim for review?", "Could you clarify the timeline and steps involved in the claims process?", "What should I expect once my claim is submitted?", "Can you give me an idea of the timeline for claim processing and payment?", "How long does it usually take to process a claim?"],
+            "responses": ["Once you submit a claim, it will be reviewed by our claims department. If approved, the payment will be processed. The time frame can vary depending on the complexity of the claim."]
+        },
+        {
+            "tag": "process_time_claim",
+            "patterns": [
+                "How long will it take to process my claim?",
+                "How long to process my claim?",
+                "Claim processing time?",
+                "Estimated claim processing duration?",
+                "Typical claim processing timeframe?",
+                "Average time for claim resolution?",
+                "Anticipated claim processing time?",
+                "Factors affecting claim processing time?",
+                "Can I speed up claim processing?",
+                "Claim progress updates?",
+                "Expected claim resolution time?",
+                "What is the typical processing time for a claim?",
+                "Can you give me an estimate of how long it will take to process my claim?",
+                "How much time does it usually take to review and process a claim?",
+                "What is the average turnaround time for claim processing?",
+                "Is there a general timeframe for claim resolution?",
+                "Can you provide an idea of the expected processing time for my claim?",
+                "How long should I anticipate waiting for my claim to be processed?",
+                "What factors can affect the processing time of a claim?",
+                "Is there any way to expedite the processing of my claim?",
+                "Will I receive updates on the progress of my claim during the processing period?"
+            ],
+            "responses": [
+                "The processing time of a claim varies depending on the type of insurance and the specifics of the claim."
+            ]
+        },
+        {
+            "tag": "cs_connect",
+            "patterns": [
+                "How can I get in touch with customer service?",
+                "Customer service",
+                "Customer service needed.",
+                "What are the ways to contact customer service?",
+                "How can I get in touch with your customer service team?",
+                "What are the available channels to reach customer service?",
+                "Can you provide me with the contact information for customer service?",
+                "How do I contact your customer service department?",
+                "What is the best way to reach out to customer service?",
+                "Can you guide me on how to connect with your customer service representatives?",
+                "Where can I find the contact details for customer service?",
+                "Is there a specific phone number or email I should use to contact customer service?",
+                "What options do I have to communicate with customer service?",
+                "How to contact customer service?",
+                "Ways to reach customer service?",
+                "Customer service contact options?",
+                "How to connect with your team?",
+                "Contact details for customer service?",
+                "Best way to reach customer support?",
+                "Customer service phone/email?",
+                "How to communicate with customer service?",
+                "Contact information for assistance?",
+                "How to get in touch with CS?"
+            ],
+            "responses": [
+                "You can reach our customer service department by phone, email, or through our website. Please check our contact page for more details."
+            ]
+        },
+        {
+            "tag": "cs_availability",
+            "patterns": [
+                "When is your customer service available?",
+                "Customer service hours?",
+                "When is CS available?",
+                "Availability of customer service?",
+                "Customer support schedule?",
+                "Service hours for CS?",
+                "When can I contact customer service?",
+                "What are the support hours?",
+                "Customer service availability?",
+                "When is CS open?",
+                "Service team working hours?",
+                "What are the hours of operation for your customer service?",
+                "When can I reach your customer service team?",
+                "What is the availability of your customer service department?",
+                "Can you provide me with the schedule for customer service support?",
+                "What are the working hours for your customer service representatives?",
+                "When is customer service assistance available?",
+                "Is there a specific time frame when I can contact customer service?",
+                "What are the service hours for your customer support team?",
+                "Can you let me know when I can expect customer service to be available?",
+                "When is your customer service staff on duty?"
+            ],
+            "responses": [
+                "Our customer service is available from 9 am to 5 pm, Monday through Friday."
+            ]
+        },
+        {
+            "tag": "cs_chat",
+            "patterns": [
+                "Live chat",
+                "Do you offer live chat support?",
+                "Is there live chat support available?",
+                "Live chat support?",
+                "Chat assistance available?",
+                "Is there a chat option?",
+                "Online chat support?",
+                "Chat feature offered?",
+                "Can I chat with support?",
+                "Chat available for inquiries?",
+                "Live chat for customer service?",
+                "Is there a chat function?",
+                "Chat support provided?",
+                "Do you have a chat feature for customer support?",
+                "Can I get assistance through live chat?",
+                "Is live chat an option for customer service?",
+                "Is there a way to chat with a support representative?",
+                "Can I connect with customer service via chat?",
+                "Is chat support offered on your website?",
+                "Do you provide real-time chat assistance?",
+                "Can I reach out to customer service through an online chat?",
+                "Is there a chat function for customer inquiries?"
+            ],
+            "responses": [
+                "Yes, we do offer live chat support. Please visit our website to access this service."
+            ]
+        },
+                {
+            "tag": "bankers_history",
+            "patterns": [
+                "Can you tell me about the history of Bankers Insurance Group?",
+                "Bankers History",
+                "History of Bankers",
+                "History of Bankers Group",
+                "Bankers Group History",
+                "History?",
+                "Group History?",
+                "Bankers Insurance Group history?",
+                "When was Bankers Insurance Group founded?",
+                "Overview of Bankers Insurance Group's background?",
+                "Founding and growth of Bankers Insurance Group?",
+                "Bankers Insurance Group establishment details?",
+                "How long has Bankers Insurance Group been operating?",
+                "Key milestones of Bankers Insurance Group?",
+                "Origin and evolution of Bankers Insurance Group?",
+                "Bankers Insurance Group timeline?",
+                "Journey of Bankers Insurance Group?"
+            ],
+            "responses": [
+                "Bankers Insurance Group was founded in 1976 and has since grown into a respected provider of insurance products and services. They are based in St. Petersburg, Florida."
+            ]
+        },
+        {
+            "tag": "bankers_customers",
+            "patterns": [
+                "What types of customers does Bankers Insurance Group serve?",
+                "Who are the customers of Bankers Insurance Group?",
+                "What customer segments does Bankers Insurance Group cater to?",
+                "Which groups of customers does Bankers Insurance Group serve?",
+                "Can you provide an overview of the customer base of Bankers Insurance Group?",
+                "What types of individuals and businesses does Bankers Insurance Group work with?",
+                "Can you give me an idea of the target audience for Bankers Insurance Group?",
+                "Who benefits from the insurance services offered by Bankers Insurance Group?",
+                "Which industries or sectors are served by Bankers Insurance Group?",
+                "What kind of customers does Bankers Insurance Group specialize in serving?",
+                "Can you describe the customer demographics of Bankers Insurance Group?",
+                "Bankers Insurance Group customers?",
+                "Who does Bankers Insurance Group serve?",
+                "Customer base of Bankers Insurance Group?",
+                "Types of customers for Bankers Insurance Group?",
+                "Bankers Insurance Group target audience?",
+                "Individuals and businesses served by Bankers Insurance Group?",
+                "Industries served by Bankers Insurance Group?",
+                "Bankers Insurance Group specialization in customers?",
+                "Demographics of Bankers Insurance Group customers?",
+                "Customers benefiting from Bankers Insurance Group services?"
+            ],
+            "responses": [
+                "Bankers Insurance Group serves a range of customers including renters, business owners, and builders. They strive to provide reliable insurance services that protect property and peace of mind."
+            ]
+        },
+        {
+            "tag": "bankers_expertise",
+            "patterns": [
+                "What are the areas of expertise of Bankers Insurance Group?",
+                "Bankers Insurance Group expertise?",
+                "Areas of expertise for Bankers Insurance Group?",
+                "What does Bankers Insurance Group specialize in?",
+                "Bankers Insurance Group strengths?",
+                "Expertise of Bankers Insurance Group?",
+                "Bankers Insurance Group's focus areas?",
+                "What claims does Bankers Insurance Group excel in?",
+                "Specific competencies of Bankers Insurance Group?",
+                "What sets Bankers Insurance Group apart in terms of expertise?",
+                "Bankers Insurance Group's exceptional areas?"
+            ],
+            "responses": [
+                "Bankers Insurance Group excels in handling catastrophe-related claims like hurricanes and flooding. They've successfully navigated over 40 catastrophes, providing prompt and reliable claims service."
+            ]
+        },
+                {
+            "tag": "bankers_philosophy",
+            "patterns": [
+                "What is Bankers Insurance Group's philosophy towards their customers?",
+                "Bankers Insurance Group philosophy?",
+                "Customer-centric philosophy of Bankers Insurance Group?",
+                "Core belief of Bankers Insurance Group towards customers?",
+                "Bankers Insurance Group customer satisfaction approach?",
+                "What sets Bankers Insurance Group apart in customer service?",
+                "How does Bankers Insurance Group value their customers?",
+                "Bankers Insurance Group personalized service commitment?",
+                "What is Bankers Insurance Group's customer empowerment focus?",
+                "How does Bankers Insurance Group understand customer needs?"
+            ],
+            "responses": [
+                "Bankers Insurance Group is committed to empowering their customers. They take the time to understand each customer's individual insurance needs, ensuring they receive the most suitable coverage."
+            ]
+        },
+        {
+            "tag": "bankers_commercialflood",
+            "patterns": [
+                "Why is Commercial Flood Insurance important?",
+                "Importance of Commercial Flood Insurance?",
+                "Why get Commercial Flood Insurance?",
+                "Significance of flood coverage for businesses?",
+                "Benefits of Commercial Flood Insurance?",
+                "Why supplement commercial property insurance with flood coverage?",
+                "How does Commercial Flood Insurance protect businesses?",
+                "Why is flood insurance crucial for businesses?",
+                "What risks does Commercial Flood Insurance mitigate?",
+                "Purpose of Commercial Flood Insurance?"
+            ],
+            "responses": [
+                "Commercial Flood Insurance is crucial because regular commercial property insurance often doesn't cover flood damage. This policy can help protect your business against costly damages from unexpected flooding."
+            ]
+        },
+        {
+            "tag": "bankers_commercialflood_time",
+            "patterns": [
+                "When is the right time to get a commercial flood policy?",
+                "When to get commercial flood policy?",
+                "Right time for commercial flood policy?",
+                "When should businesses get flood coverage?",
+                "Timing for commercial flood policy?",
+                "Importance of prompt commercial flood policy?",
+                "Waiting period for commercial flood coverage?",
+                "When to secure commercial flood policy?",
+                "Risks of delaying commercial flood policy?",
+                "Recommended timing for flood coverage?",
+                "Commercial flood policy timeframe?"
+            ],
+            "responses": [
+                "It's best to get a commercial flood policy as soon as possible because there's usually a 30-day waiting period before coverage begins. Don't wait until it's hurricane season!"
+            ]
+        },
+        {
+            "tag": "bankers_commercialflood_coverage",
+            "patterns": [
+                "What does a Commercial Flood Policy cover?",
+                "Commercial Flood Policy coverage?",
+                "What does Commercial Flood Policy cover?",
+                "Coverage under Commercial Flood Policy?",
+                "Scope of Commercial Flood Policy coverage?",
+                "Specifics of Commercial Flood Policy coverage?",
+                "What damages does Commercial Flood Policy cover?",
+                "Commercial Flood Policy protection details?",
+                "Coverage for business property in Commercial Flood Policy?",
+                "What is insured by Commercial Flood Policy?",
+                "Factors to consider in Commercial Flood Policy coverage?"
+            ],
+            "responses": [
+                "A Commercial Flood Policy can cover physical damage to your business property, including buildings and contents from floodwaters. Always check the specifics of your policy to understand what's covered."
+            ]
+        },
+                {
+            "tag": "bankers_flood_zone",
+            "patterns": [
+                "What is a flood zone?",
+                "Definition of flood zone?",
+                "What does \"flood zone\" mean?",
+                "How are flood zones determined?",
+                "Significance of flood zones?",
+                "How does flood zone affect insurance?",
+                "Mapping system for flood zones?",
+                "Different risk levels in flood zones?",
+                "Considerations for being in a flood zone?",
+                "Impact of being in a flood zone?"
+            ],
+            "responses": [
+                "A flood zone is an area designated by the Federal Emergency Management Agency (FEMA) that indicates its risk of flooding. Zones range from low to high risk."
+            ]
+        },
+        {
+            "tag": "bankers_flood_zone_determine",
+            "patterns": [
+                "How can I determine the flood zone of my business?",
+                "How to determine business's flood zone?",
+                "Finding business's flood zone?",
+                "How to check flood zone for my business?",
+                "Determining flood zone of business?",
+                "Where to find business's flood zone information?",
+                "How to access business's flood zone details?",
+                "Resource for determining business's flood zone?",
+                "Steps to identify business's flood zone?",
+                "Checking business's flood zone online?",
+                "Government sources for business's flood zone?"
+            ],
+            "responses": [
+                "You can determine your business's flood zone by checking the FEMA Flood Map Service Center website."
+            ]
+        },
+        {
+            "tag": "bankers_prep",
+            "patterns": [
+                "What steps should I take to prepare my business for disasters?",
+                "How to prepare my business for disasters?",
+                "Business disaster preparation steps?",
+                "Steps for business disaster readiness?",
+                "What should I do to protect my business from disasters?",
+                "How to create a disaster plan for my business?",
+                "Updating insurance and preparing for disasters?",
+                "Safeguarding business property during emergencies?",
+                "Employee training for business emergencies?",
+                "Resources for business disaster preparedness?",
+                "Essential elements of business disaster readiness?"
+            ],
+            "responses": [
+                "Preparation is key in handling disasters. Review and update your insurance policies, create a business continuity plan, protect your property and records, and ensure that your employees are trained for emergencies."
+            ]
+        },
+        {
+            "tag": "bankers_aob",
+            "patterns": [
+                "What is Assignment of Benefits (AOB)?",
+                "What is AOB?",
+                "Definition of Assignment of Benefits (AOB)?",
+                "What does AOB stand for?",
+                "Can you explain AOB in insurance?",
+                "Purpose of AOB?",
+                "AOB meaning?",
+                "What happens with an AOB?",
+                "Briefly explain Assignment of Benefits.",
+                "How does AOB work?",
+                "AOB in insurance?"
+            ],
+            "responses": [
+                "Assignment of Benefits (AOB) is a contract that, once signed, transfers the insurance claims rights or benefits of your insurance policy to a third party."
+            ]
+        },
+        {
+            "tag": "bankers_aob_issue",
+            "patterns": [
+                "How can I avoid an Assignment of Benefits issue?",
+                "How to prevent AOB issues?",
+                "Avoiding Assignment of Benefits (AOB) problems?",
+                "Tips to steer clear of AOB issues?",
+                "Preventing issues with AOB?",
+                "How can I safeguard against AOB problems?",
+                "What steps should I take to avoid AOB complications?",
+                "How to minimize the risk of AOB conflicts?",
+                "Avoiding AOB pitfalls?",
+                "Any recommendations to prevent AOB concerns?",
+                "What measures can I take to steer clear of AOB disputes?"
+            ],
+            "responses": [
+                "To avoid an AOB issue, read any document carefully before signing. If in doubt, consult with your insurer or legal counsel. Don't feel pressured to sign an AOB in order to start repairs."
+            ]
+        },
+                {
+            "tag": "bankers_aob_scam",
+            "patterns": [
+                "What should I be wary of to avoid being a victim of an AOB scam?",
+                "How to avoid AOB scams?",
+                "Tips to prevent falling for AOB scams?",
+                "How can I protect myself from AOB fraud?",
+                "What should I watch out for to avoid AOB scams?",
+                "Preventing becoming a victim of AOB scams?",
+                "How to identify and avoid AOB scam attempts?",
+                "What red flags should I be aware of to avoid AOB scams?",
+                "Any recommendations to steer clear of AOB scam schemes?",
+                "What measures can I take to safeguard against AOB scams?",
+                "How can I ensure I don't fall prey to AOB fraud?"
+            ],
+            "responses": [
+                "Be wary of contractors who push you to sign an AOB before they start work, offer to pay your deductible, or promise to handle everything without your insurer's involvement."
+            ]
+        },
+        {
+            "tag": "bankers_contact",
+            "patterns": [
+                "How can I contact Bankers Insurance Group?",
+                "How to reach Bankers Insurance Group?",
+                "Contact details for Bankers Insurance Group?",
+                "How can I get in touch with Bankers Insurance Group?",
+                "Bankers Insurance Group contact information?",
+                "What are the ways to contact Bankers Insurance Group?",
+                "How can I reach out to Bankers Insurance Group?",
+                "Bankers Insurance Group's contact options?",
+                "What is the customer service number for Bankers Insurance Group?",
+                "Where can I find Bankers Insurance Group's official website?",
+                "How do I contact Bankers Insurance Group's customer service?"
+            ],
+            "responses": [
+                "You can contact Bankers Insurance Group by visiting their official website or by calling their customer service number."
+            ]
+        }
+    ]
+}
